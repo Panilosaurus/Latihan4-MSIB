@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">My Inventory</a></li>
-          </ul>
-        </nav>
-      </header>
-    <div class="container">
 
-      <div class="profile-card">
-        <div class="profile-img">
-          <img src="image.png" alt="Profile" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">My Inventory</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <div class="profile-card">
+      <div class="profile-img">
+        <img src="image.png" alt="Profile" />
+      </div>
+      <div class="content-profile">
+        <div class="profile-info">
+          <h2 id="profile-name">Nama Anda</h2>
+          <p id="profile-role">Front End Designer</p>
+          <button class="btn contact" id="btn-edit">Edit</button>
+          <button class="btn resume">Resume</button>
         </div>
-        <div class="content-profile">
-            <div class="profile-info">
-              <h2>Nama Anda</h2>
-              <p>Front End Designer</p>
-              <button class="btn contact">Kontak</button>
-              <button class="btn resume">Resume</button>
-            </div>
-            <div class="profile-details">
-              <p class="details"><strong>Availability:</strong> <span>Full Time</span></p>
-              <p class="details"><strong>Usia:</strong> <span>17</span></p>
-              <p class="details"><strong>Lokasi:</strong> <span>Jakarta, Indonesia</span></p>
-              <p class="details"><strong>Pengalaman:</strong> <span>2</span></p>
-              <p class="details"><strong>Email:</strong> <span>Developer@gmail.com</span></p>
-            </div>
+        <div class="profile-details">
+          <p class="details"><strong>Availability:</strong> <span id="profile-availability">Full Time</span></p>
+          <p class="details"><strong>Usia:</strong> <span id="profile-age">17</span></p>
+          <p class="details"><strong>Lokasi:</strong> <span id="profile-loc">Jakarta, Indonesia</span></p>
+          <p class="details"><strong>Pengalaman:</strong> <span id="profile-exp">2</span></p>
+          <p class="details"><strong>Email:</strong> <span id="profile-email">Developer@gmail.com</span></p>
         </div>
       </div>
-
-      <form action="#" method="post">
-        <label for="name">Nama</label>
-        <input type="text" id="name" name="name" />
-
-        <label for="role">Role</label>
-        <input type="text" id="role" name="role" />
-
-        <label for="availability">Availability</label>
-        <input type="text" id="availability" name="availability" />
-
-        <label for="age">Age</label>
-        <input type="text" id="age" name="age" />
-
-        <label for="location">Lokasi</label>
-        <input type="text" id="location" name="location" />
-
-        <label for="experience">Years Experience</label>
-        <input type="text" id="experience" name="experience" />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-
-        <button type="submit" class="btn submit">Submit</button>
-      </form>
     </div>
-  </body>
+
+    <form action="#" method="post" id="form-edit">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="role">Role</label>
+      <input type="text" id="role" name="role" />
+
+      <label for="availability">Availability</label>
+      <input type="text" id="availability" name="availability" />
+
+      <label for="age">Age</label>
+      <input type="text" id="age" name="age" />
+
+      <label for="location">Lokasi</label>
+      <input type="text" id="location" name="location" />
+
+      <label for="experience">Years Experience</label>
+      <input type="text" id="experience" name="experience" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <button type="submit" class="btn submit" id="btn-submit">Submit</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
