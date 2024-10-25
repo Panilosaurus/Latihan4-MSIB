@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-card {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.content-profile {
+    display: flex;
+    gap: 50px;
+}
+
+.profile-img {
+    margin-right: 20px;
+}
+
+.profile-img img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.profile-info p, .profile-details p {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn.contact {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.resume {
+    background-color: #28a745;
+    color: white;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn.submit {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+}
